@@ -1,0 +1,319 @@
+/* CSS Document */
+img{
+	display: block;
+}
+
+var{
+	font-style: normal;
+	display: inline-block;
+}
+
+body{
+	margin: 0;
+	background: #140f13;
+}
+body.menuTrue{
+	pointer-events: none;
+}
+
+#mainBox{
+	color: #fff;
+	font-family: 'Jost', sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+#header{
+	position: relative;
+}
+#header > div{
+	position: absolute;
+	width: 100%;
+}
+#header #bgBox{
+	overflow: hidden;
+	position: relative;
+}
+#header #bgBox img{
+	position: relative;
+    left: 50%;
+    margin-left: -960px;
+	min-height: 480px;
+}
+body.w768 #header #bgBox img {
+    margin-left: -384px;
+}
+#header #logo{
+	top: 56px;
+	left: 0;
+}
+#header #logo img{
+	width: 236px;
+	margin: auto;
+}
+body.w768 #header #logo {
+    top: 12px;
+}
+body.w768 #header #logo img{
+	width: 120px;
+}
+#header #offerBox{
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+#header #offerBox .wrapper{
+	display: table;
+    height: 100%;
+    width: 100%;
+}
+#header #offerBox .offer{
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#header .offer .frame{
+	max-width: 500px;
+    margin: 30px auto 0;
+	position: relative;
+}
+body.w768 #header .offer .frame{
+	margin: 0 auto;
+    top: -70px;
+}
+#header .offer .frame div{
+	padding: 10px;
+}
+#header .offer .txt var{
+	font-size: 22px;
+	line-height: 26px;
+	/*font-style: italic;*/
+	font-weight: 500;
+}
+#header .offer .txt p{
+	margin: 1px;
+}
+#header .offer .cta a{
+	display: inline-block;
+	background: #b386a7;
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 10px 20px;
+	min-width: 120px;
+}
+#header .offer .cta a:hover{
+	background: rgba(255,255,255,1);
+	color: #b386a7;
+}
+
+#affLogo {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+#affLogo a{
+	display: inline-block;
+}
+#affLogo a img{
+	max-height: 80px;
+}
+
+#steps{
+	text-align: center;
+	padding: 28px 5px;
+	background: #1f171d;
+}
+#steps .wrapper{
+	margin: auto;
+}
+body.w768 #steps > .wrapper,
+body.w946 #steps > .wrapper{
+	max-width: 380px;
+}
+#steps .step{
+	display: inline-block;
+	position: relative;
+	margin: 5px;
+	background: #000;
+}
+#steps .step img{
+	opacity: 0.9;
+}
+#steps .step:hover img{
+	opacity: 1;
+}
+#steps .step .stepTxt{
+	position: absolute;
+    top: 0;
+	left: 0;
+	height: 100%;
+    width: 100%;
+}
+#steps .step .wrapper{
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+#steps .step .txt{
+	display: table-cell;
+    vertical-align: middle;
+	text-align: left;
+	color: #b386a7;
+	padding: 30px;
+}
+#steps .step .txt{
+	font-size: 18px;
+	font-weight: 500;
+	line-height: normal;
+}
+#steps .step .txt var{
+	/*font-style: italic;*/
+	text-transform: uppercase;
+	/*text-align: center;*/
+	width: 145px;
+	display: block;
+	float: right;
+	padding-left: 10px;
+    box-sizing: border-box;
+}
+
+#footer{
+	padding: 30px 0;
+    max-width: 930px;
+    margin: auto;
+    box-sizing: border-box;
+}
+#footer div{
+	padding: 12px;
+	text-align: center;
+}
+#footer img{
+	padding: 10px;
+	display: inline-block;
+}
+#footer #logos{
+	padding: 12px 0;
+}
+#footer #licenceInfo{
+	color: #a696a2;
+}
+
+#menuBtn{
+	position: fixed;
+    top: 15px;
+    left: 0;
+    width: 100%;
+}
+#menuBtn .wrapper{
+	max-width: 950px;
+	margin: auto;
+	overflow: hidden;
+}
+#menuBtn a{
+	background: #b386a7;
+    float: right;
+    margin-right: 15px;
+    padding: 6px 8px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    /* font-style: italic; */
+    font-weight: normal;
+}
+#menuBtn a:hover{
+	/*
+	background: rgba(255,255,255,1);
+	color: #b386a7;
+	*/
+}
+
+#menuBox{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+#menuBox > .wrapper{
+	max-width: 950px;
+	margin: auto;
+	height: 100%;
+}
+#menuBox .items{
+    /*width: 320px;*/
+    float: right;
+    /*height: 100%;*/
+    overflow: auto;
+    position: relative;
+    top: 10px;
+    right: 12px;
+    padding-top: 40px;
+}
+#menuBox .items .wrapper{
+	background: rgba(31,23,29,0.9);;
+    padding: 12px;
+}
+#menuBox ul{
+	max-width: 170px;
+    margin: 0 auto;
+    padding: 10px 10px 0;
+    list-style: none;
+}
+#menuBox li{
+    padding: 4px 0;
+	text-align: right;
+}
+#menuBox li a{
+	text-decoration: none;
+	font-size: 16px;
+	line-height: normal;
+	display: block;
+	padding: 4px 8px 4px 4px;
+	color: #a696a2;
+	max-width: 180px;
+	/*font-style: italic;*/
+}
+#menuBox li a:hover{
+	color: #fff;
+	background: #b386a7;
+}
+#menuBox a b{
+	color: #fff;
+	font-weight: normal;
+}
+#menuBox a:hover b{
+	color: #fff;
+}
+
+#closeMenu{
+	position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+}
+#closeMenu .wrapper{
+	overflow: hidden;
+    max-width: 950px;
+    margin: auto;
+}
+#closeMenu a{
+	float: right;
+	background: #b386a7;
+	padding: 6px;
+    border-radius: 2px;
+	margin-right: 20px;
+}
+#closeMenu a:hover{
+	background: rgba(255,255,255,1);
+}
+
+body.init{
+	display: none;
+}
+body.menuTrue #menuBox{
+	display: block;
+	pointer-events: all;
+}
+

@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script type="text/javascript">
+
+
+		/* Start of config
+		---------------------------------------------------------------------- */
+		// domain url
+		var url = '';
+
+		// template name
+		var template = 'landing/OX-cs3';
+		//var template = 'landing/OX-cs3';
+
+		// default language page
+		var defaultLang = 'en';
+
+		// aff name
+		var affName = '88888';
+
+		// data meta
+		var templateConfig = {
+			
+			// languages list
+			languages: ['en','de','fr','it','es','ru','da','fi','nb','sv'],
+
+			// partner logo image path, if empty('') then no image
+			logoPartner: 'images/partners-logo/aff_logo.png',
+
+			// link for aff logo
+			afflink : '',
+
+			// image offer
+			imageOffer: "images/offer-background/offer-bg-1.jpg",
+
+			// data template
+			data: {
+
+				// EN
+				en: {
+					// text offer
+					offers : [
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						}
+					],
+					
+					// text button
+					cta: 'REGISTER',
+
+					// steps
+					stepText_1: 'OLD',
+					stepText_2: 'OLD',
+					stepText_3: 'OLD',
+					
+					//copyright
+					copyright: "OrientXpress (www.orientxpresscasino.com) is owned and operated by Equinox Dynamic N.V., of E-Commerce Park, Vredenberg, Curacao and its wholly owned subsidiary, Domiseda & Partners s.r.o Zamocka 30, 811 01 Bratislava, Slovak Republic. OrientXpress operates under Master License No.365/JAZ Sub-License GLH-OCCHKTW0708082016,  granted by the Government of Curaçao."
+				},
+
+				// De
+				de: {
+					// text offer
+					offers : [
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						}
+					],
+					
+					// text button
+					cta: 'REGISTER',
+
+					// steps
+					stepText_1: 'OLD',
+					stepText_2: 'OLD',
+					stepText_3: 'OLD',
+					
+					//copyright
+					copyright: "OrientXpress (www.orientxpresscasino.com) is owned and operated by Equinox Dynamic N.V., of E-Commerce Park, Vredenberg, Curacao and its wholly owned subsidiary, Domiseda & Partners s.r.o Zamocka 30, 811 01 Bratislava, Slovak Republic. OrientXpress operates under Master License No.365/JAZ Sub-License GLH-OCCHKTW0708082016,  granted by the Government of Curaçao."
+				},
+
+				// FR
+				fr: {
+					// text offer
+					offers : [
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						}
+					],
+					
+					// text button
+					cta: 'REGISTER',
+
+					// steps
+					stepText_1: 'OLD',
+					stepText_2: 'OLD',
+					stepText_3: 'OLD',
+					
+					//copyright
+					copyright: "OrientXpress (www.orientxpresscasino.com) is owned and operated by Equinox Dynamic N.V., of E-Commerce Park, Vredenberg, Curacao and its wholly owned subsidiary, Domiseda & Partners s.r.o Zamocka 30, 811 01 Bratislava, Slovak Republic. OrientXpress operates under Master License No.365/JAZ Sub-License GLH-OCCHKTW0708082016,  granted by the Government of Curaçao."
+				},
+
+				// IT
+				it: {
+					// text offer
+					offers : [
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						}
+					],
+					
+					// text button
+					cta: 'REGISTER',
+
+					// steps
+					stepText_1: 'OLD',
+					stepText_2: 'OLD',
+					stepText_3: 'OLD',
+					
+					//copyright
+					copyright: "OrientXpress (www.orientxpresscasino.com) is owned and operated by Equinox Dynamic N.V., of E-Commerce Park, Vredenberg, Curacao and its wholly owned subsidiary, Domiseda & Partners s.r.o Zamocka 30, 811 01 Bratislava, Slovak Republic. OrientXpress operates under Master License No.365/JAZ Sub-License GLH-OCCHKTW0708082016,  granted by the Government of Curaçao."
+				},
+
+				// ES
+				es: {
+					// text offer
+					offers : [
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						}
+					],
+					
+					// text button
+					cta: 'REGISTER',
+
+					// steps
+					stepText_1: 'OLD',
+					stepText_2: 'OLD',
+					stepText_3: 'OLD',
+					
+					//copyright
+					copyright: "OrientXpress (www.orientxpresscasino.com) is owned and operated by Equinox Dynamic N.V., of E-Commerce Park, Vredenberg, Curacao and its wholly owned subsidiary, Domiseda & Partners s.r.o Zamocka 30, 811 01 Bratislava, Slovak Republic. OrientXpress operates under Master License No.365/JAZ Sub-License GLH-OCCHKTW0708082016,  granted by the Government of Curaçao."
+				},
+
+				// RU
+				ru: {
+					// text offer
+					offers : [
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						}
+					],
+					
+					// text button
+					cta: 'REGISTER',
+
+					// steps
+					stepText_1: 'OLD',
+					stepText_2: 'OLD',
+					stepText_3: 'OLD',
+					
+					//copyright
+					copyright: "OrientXpress (www.orientxpresscasino.com) is owned and operated by Equinox Dynamic N.V., of E-Commerce Park, Vredenberg, Curacao and its wholly owned subsidiary, Domiseda & Partners s.r.o Zamocka 30, 811 01 Bratislava, Slovak Republic. OrientXpress operates under Master License No.365/JAZ Sub-License GLH-OCCHKTW0708082016,  granted by the Government of Curaçao."
+				},
+
+				// DA
+				da: {
+					// text offer
+					offers : [
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						}
+					],
+					
+					// text button
+					cta: 'REGISTER',
+
+					// steps
+					stepText_1: 'OLD',
+					stepText_2: 'OLD',
+					stepText_3: 'OLD',
+					
+					//copyright
+					copyright: "OrientXpress (www.orientxpresscasino.com) is owned and operated by Equinox Dynamic N.V., of E-Commerce Park, Vredenberg, Curacao and its wholly owned subsidiary, Domiseda & Partners s.r.o Zamocka 30, 811 01 Bratislava, Slovak Republic. OrientXpress operates under Master License No.365/JAZ Sub-License GLH-OCCHKTW0708082016,  granted by the Government of Curaçao."
+				},
+
+				// FI
+				fi: {
+					// text offer
+					offers : [
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						}
+					],
+					
+					// text button
+					cta: 'REGISTER',
+
+					// steps
+					stepText_1: 'OLD',
+					stepText_2: 'OLD',
+					stepText_3: 'OLD',
+					
+					//copyright
+					copyright: "OrientXpress (www.orientxpresscasino.com) is owned and operated by Equinox Dynamic N.V., of E-Commerce Park, Vredenberg, Curacao and its wholly owned subsidiary, Domiseda & Partners s.r.o Zamocka 30, 811 01 Bratislava, Slovak Republic. OrientXpress operates under Master License No.365/JAZ Sub-License GLH-OCCHKTW0708082016,  granted by the Government of Curaçao."
+				},
+
+				// NB
+				nb: {
+					// text offer
+					offers : [
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						}
+					],
+					
+					// text button
+					cta: 'REGISTER',
+
+					// steps
+					stepText_1: 'OLD',
+					stepText_2: 'OLD',
+					stepText_3: 'OLD',
+					
+					//copyright
+					copyright: "OrientXpress (www.orientxpresscasino.com) is owned and operated by Equinox Dynamic N.V., of E-Commerce Park, Vredenberg, Curacao and its wholly owned subsidiary, Domiseda & Partners s.r.o Zamocka 30, 811 01 Bratislava, Slovak Republic. OrientXpress operates under Master License No.365/JAZ Sub-License GLH-OCCHKTW0708082016,  granted by the Government of Curaçao."
+				},
+
+				// SV
+				sv: {
+					// text offer
+					offers : [
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						},
+						{
+							text : "OLD",
+							styles : ""
+						}
+					],
+					
+					// text button
+					cta: 'Register',
+
+					// steps
+					stepText_1: 'OLD',
+					stepText_2: 'OLD',
+					stepText_3: 'OLD',
+					
+					//copyright
+					copyright: "OrientXpress (www.orientxpresscasino.com) is owned and operated by Equinox Dynamic N.V., of E-Commerce Park, Vredenberg, Curacao and its wholly owned subsidiary, Domiseda & Partners s.r.o Zamocka 30, 811 01 Bratislava, Slovak Republic. OrientXpress operates under Master License No.365/JAZ Sub-License GLH-OCCHKTW0708082016,  granted by the Government of Curaçao."
+				}
+			},
+
+			siteDesktopUrls: {
+				en: 'https://www.orientxpresscasino.com/?lang=en&r={{rand}}',
+				de: 'https://www.orientxpresscasino.com/?lang=de&r={{rand}}',
+				fr: 'https://www.orientexpresscasino.info/?lang=fr&r={{rand}}',
+				it: 'https://www.orientexpresscasino.info/?lang=it&r={{rand}}',
+				es: 'https://www.orientxpresscasino.com/?lang=es&r={{rand}}',
+				ru: 'https://www.orientexpresscasino.com/?lang=ru&r={{rand}}',
+				da: 'https://www.orientxpresscasino.com/?lang=da&r={{rand}}',
+				fi: 'https://www.orientxpresscasino.com/?lang=fi&r={{rand}}',
+				nb: 'https://www.orientxpresscasino.com/?lang=nb&r={{rand}}',
+				sv: 'https://www.orientxpresscasino.com/?lang=sv&r={{rand}}'
+			},
+	
+			siteMobileUrls: {
+				en: 'https://m.orientxpresscasino.com/en/signup',
+				uk: 'https://m.orientxpresscasino.com/en/signup',
+				de: 'https://m.orientxpresscasino.com/de/signup',
+				fr: 'https://m.orientexpresscasino.info/fr/signup',
+				it: 'https://m.orientexpresscasino.info/it/signup',
+				es: 'https://m.orientxpresscasino.com/es/signup',
+				ru: 'https://m.orientexpresscasino.com/ru/signup',
+				da: 'https://m.orientxpresscasino.com/da/signup',
+				fi: 'https://m.orientxpresscasino.com/fi/signup',
+				nb: 'https://m.orientxpresscasino.com/nb/signup',
+				sv: 'https://m.orientxpresscasino.com/sv/signup'
+			}
+		};
+
+
+
+		
+		// GA config
+		var campainName	 = '150per',
+			sourceName   = '',
+			mediumName   = 'lp';
+
+
+		/* End of config
+		---------------------------------------------------------------------- */
+
+
+
+		// Debug the aff data.
+		var DEBUG = false;
+		if( location.href.search('debug=true') != -1 ) 
+		{
+			DEBUG = true;
+		}
+
+
+		// Prepend "test_" to the template directory, for testing purposes..
+		if( location.href.search('test=true') != -1 ) 
+		{
+			var dirs = template.split("/"),
+				last = dirs.length -1;
+
+			dirs[last] = 'test_' + dirs[last];
+			template = dirs.join("/");
+		}
+
+
+		// Remove spaces and convert all to lower case
+		affName = affName.replace(/\s/g, '-').toLowerCase();
+
+
+		// Check if lang param exits, then replace the default lang value.
+		if( location.href.search('lang=') != -1 )
+		{
+			var langParam = new RegExp(/(:?&)?lang=(\w{2})/i).exec(location.href);
+
+			if( langParam )
+			{
+				langParam = langParam[2];
+				
+				for(var l in templateConfig.languages)
+				{
+					if( templateConfig.languages[l] === langParam ) 
+					{
+						defaultLang = langParam;
+					}
+				}
+			}
+		}
+
+
+
+		// get btag parametr from quesry string
+		var btagParam = /btag=([^&]*)/.exec(location.search);
+
+		if (!btagParam || (btagParam && !btagParam[1]) )  
+		{
+			throw 'btag is not set';
+		}
+
+
+
+
+		templateConfig.btag = btagParam[1];
+		// update source name with selected btag 
+		sourceName = templateConfig.btag;
+
+		var gaParams = '&utm_source=' + sourceName + '&utm_medium=' + mediumName +'&utm_campaign=' + campainName;
+
+		if( window.localStorage ) 
+		{
+			localStorage.setItem( template + '_' + affName, JSON.stringify(templateConfig) );
+		}
+
+		// concatinate the domain with the template, default page.
+		url += '/' + template + '/' + '?aff=' + affName  + '&lang=' + defaultLang;
+
+		if( !DEBUG ) 
+		{
+			window.location.href = url + gaParams;
+		}
+
+	 </script>
+</head>
+<body>
+
+</body>
+</html>
